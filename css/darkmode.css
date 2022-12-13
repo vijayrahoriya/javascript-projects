@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    background: #fff;
+    color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background .9s;
+}
+
+.but{
+    width: 130px;
+    height: 60px;
+    background: rgb(208, 221, 233);
+    border-radius: 50px;
+    box-shadow: inset;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    margin: 0 20px;
+    align-items: center;
+    position: relative;
+}
+
+body.active{
+    background: #000;
+}
+
+.roll{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    margin-left: 3px;
+    position: absolute;
+    animation: toggleof .8s linear forwards;
+}
+
+.roll.active{
+    background: #000;
+    position: absolute;
+    right: 5px;
+    animation: toggleon .8s linear forwards;
+}
+
+@keyframes toggleon{
+    0%{
+        left: 3px;
+    }
+    20%{
+        left: 15px;
+    }
+    40%{
+        left: 30px
+    }
+    60%{
+        left: 45px;
+    }
+    80%{
+        left: 60px;
+    }
+    100%{
+        left: 70px;
+    }
+}
+@keyframes toggleof{
+    0%{
+        right: 3px;
+    }
+    20%{
+        right: 15px;
+    }
+    40%{
+        right: 30px
+    }
+    60%{
+        right: 45px;
+    }
+    80%{
+        right: 60px;
+    }
+    100%{
+        right: 70px
+    }
+}

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    background: linear-gradient(135deg, rgb(215, 47, 80) 10%, rgb(199, 157, 75) 90%);
+}
+
+.bigbox{
+    background: #fff;
+    padding: 0 2rem 1rem 2.5rem;
+    border-radius: 1px;
+    width: 33vw;
+    margin-top: 5rem;
+}
+
+.up{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    padding: 15px 10px;
+    width: 50%;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+    background: none;
+    border: none;
+}
+
+.active{
+    background: linear-gradient(90deg, #fff,rgb(239, 238, 238))
+}
+
+.first{
+    background: rgb(227, 227, 227);
+    border: inset solid #999;
+    padding: 1rem;
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+.first input{
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    background: none;
+}
+
+.first span{
+    background: none;
+    color: #999;
+}
+
+.but2{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.create{
+    background: rgb(227, 227, 227);
+    padding: 1rem;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #999;
+}
+
+.mid{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.text{
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: .5px;
+    color: #999;
+}
+
+.text::after{
+    content: "";
+    width: 30%;
+    height: 1px;
+    position: absolute;
+    background: #999;
+    left: 0;
+    top:50%;
+}
+.text::before{
+    content: "";
+    width: 30%;
+    height: 1px;
+    position: absolute;
+    background: #999;
+    right: 0;
+    top:50%;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pip{
+    color: rgb(229, 226, 226);
+    height:1rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.icons i{
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.left input{
+    padding: 1rem;
+    background: rgb(227, 227, 227);
+    margin-right: 1rem;
+    
+}
+
+.right a{
+    text-decoration: none;
+}
+
+.right a:hover{
+    text-decoration: underline;
+}
+
+.btn2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 2rem;
+}
+
+.btn2 button{
+    padding: 1rem;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background: green;
+    font-weight: 600;
+    font-size: 1.2rem;
+    box-shadow: 6px 6px 10px rgba(0,0,0,.3),-6px -6px 10px rgba(0,0,0,.1);
+}

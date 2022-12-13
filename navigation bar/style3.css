@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav .navbar{
+    list-style: none;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    position: relative;
+    height: 10vh;
+    align-items: center;
+
+}
+
+nav li i{
+    font-size: .8rem;
+    padding-left: .2rem;
+    cursor: pointer;
+}
+
+.navbar li{
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+    padding: 10px;
+}
+
+.slide{
+    width: 15%;
+}
+
+.temp{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    display: none;
+    padding: 5px;;
+    cursor: pointer;
+    border: .5px solid gray;
+}
+
+.navbar li:hover{
+    background: rgb(212, 232, 232);
+    border-radius: .25rem;
+}
+
+.slide:hover .temp{
+    display: block;
+}
+
+
+

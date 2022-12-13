@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(112, 21, 112);
+}
+
+
+.welcome {
+    background: #fff;
+    padding: 4rem;
+    border-radius: .25rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 70%;
+    margin: 20px 0;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-family: 'Playball', cursive;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+button{
+    padding: 1rem 2rem;
+    background: rgb(112, 21, 112);
+    border: none;
+    margin: 10px 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: .5rem;
+    width: 50%;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+button:hover{
+    box-shadow: 6px 6px 10px rgba(0,0,0,.4), -6px -6px 10px rgba(0,0,0,.1);
+}
+
+button:last-child{
+    background: rgb(42, 2, 42);
+}
+
+.startgame{
+    background: #fff;
+    width: 35vw;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 2rem 3rem;
+}
+
+.startgame h2{
+    font-family: 'Playball', cursive;
+}
+
+input{
+    padding: 1rem;
+    width: 50%;
+    border: .1rem solid lightgray;
+    font-size: 1.1rem;
+    font-family: 'Playball', cursive;
+    margin-bottom: 3rem;;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Playball', cursive;
+}
+
+.info span{
+    color: crimson;
+}

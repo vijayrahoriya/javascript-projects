@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgb(119, 181, 239);
+}
+
+#box{
+    width: 40%;
+    background: #fff;
+    padding: 20px;
+    border-radius: .5rem;
+}
+
+.main h2{
+    margin-bottom: 20px;
+}
+
+.main .row{
+    margin: 20px 0;
+}
+
+.btn{
+    padding: 8px 10px;
+    width: 100%;
+    border: none;
+    border-radius: .5rem;
+    background: rgb(119, 181, 239);
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}

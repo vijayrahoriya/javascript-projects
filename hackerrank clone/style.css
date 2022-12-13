@@ -1,0 +1,516 @@
+header{
+    background: #39424e;
+    color: #fff;
+    width: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap');
+
+body{
+    background: rgb(236, 234, 229);
+}
+
+/* ultility classes  */
+.br{
+    border-right: none;
+}
+.bl{
+    border-left: none;
+}
+.bt{
+    border-top: none;
+}
+.bb{
+    border-bottom: none;
+}
+
+.navbar-brand{
+    font-weight: 800;
+    font-size: 1.7rem;
+    position: relative;
+    color: #fff;
+}
+
+.navbar-brand:hover{
+    color: #fff;
+}
+
+.navbar-brand::after{
+    content: "";
+    width: 1rem;
+    height: 1.5rem;
+    top: 20%;
+    background: rgb(25, 176, 25);
+    position: absolute;
+}
+
+.navbar li{
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.navbar li a{
+    color: rgb(185, 181, 181);
+    font-weight: 700;
+    position: relative;
+}
+
+.navbar li a.active::after{
+    width: 100%;
+}
+
+.navbar li a::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    bottom: -14px;
+    background: rgb(25, 176, 25);
+    left: 0;
+    transition: width .3s;
+}
+
+.navbar li a:hover::after{
+    width:100%;
+}
+
+.navbar li a:hover{
+    color: #fff;
+}
+
+.navbar form{
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    background: #000;
+    padding: 0 10px;
+    transition: all 1s;
+}
+
+.search input{
+    background: transparent;
+    padding: 10px 0;
+    height: 40px;
+    margin-left: 10px;
+    width: 90px;
+    color: #fff;
+    outline: none;
+    border: none;
+    transition: all .3s;
+}
+
+.search.active{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: transparent;
+}
+
+.active input{
+    width: 0;
+}
+
+.navbar form span i{
+    font-weight: 400;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.navbar form i:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar form em{
+    margin: 0 10px;
+}
+
+
+
+.navbar form i{
+    margin: 0 20px;
+    font-weight: 600;
+    background: transparent;
+    color: rgb(185, 181, 181);
+    font-size: 1.3rem;
+}
+
+.signup{
+    padding: 5px 10px;
+    background: green;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 3px;
+}
+
+.signup a{
+    text-decoration: none;
+    color: #fff;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+.section1{
+    color: #fff;
+    padding: 15px 0;
+    padding-top: 20px;;
+    background: linear-gradient(88.6deg,#11639c,#097bbf 58.85%,#00ace0);
+}
+
+.section1 h5{
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.section1 p{
+    font-weight: 500;
+    color: rgb(185, 181, 181);
+}
+
+.section1 select{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 2px dotted #fff;
+}
+
+.section1 select:hover{
+    color: #000;
+}
+
+.first-row{
+    border-top: 3.5px solid #097bbf;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, .1);
+}
+
+.first-row strong{
+    color: #999;
+    font-weight: 400;
+}
+
+.btn-container{
+    display: flex;
+}
+
+.but{
+    background: rgb(234, 234, 234);
+    border: none;
+    color: gray;
+    padding: 8px 10px;
+    border-radius: .25rem;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.but:hover{
+    filter: brightness(.95);
+}
+
+.first-row p{
+    color: gray
+}
+
+.first-row .success{
+    text-align: center;
+}
+
+.first-row .start{
+    background: rgb(72, 191, 72);
+    color: #fff;
+    border: none;
+    width: 50%;
+    font-weight: 600;
+    padding: 8px 20px;
+    text-align: center;
+    border-radius: .25rem !important;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .3);
+    font-size: 1.2rem;
+}
+
+.buttons-row{
+    background: #fff;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, .1), -6px -6px 10px rgba(0, 0, 0, .1);
+}
+
+.buttons-row button{
+    width: 100%;
+    padding: 10px 20px;
+    border: .2px solid lightgray;
+    text-align: left;
+    font-size: 1.5rem;
+    background: transparent;
+    font-weight: 600;
+    color: #333
+}
+
+.buttons-row .col-md-4{
+    margin: 0 ;
+    text-align: left;
+    padding: 0;
+}
+
+.last-row{
+    background: linear-gradient(rgb(52, 52, 194),skyblue);
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.last-row span{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.last-row p{
+    font-size: 1.1rem;
+}
+
+.last-row button{
+    background: #fff;
+    padding: 10px 20px;
+    width: 40%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 10px 0;
+    border: none;
+    border-radius: .25rem;
+    color: #444;
+}
+
+.last-row img{
+    width: 80%;
+    height: 80%;
+}
+
+footer{
+    background: #fff;
+    text-align: center;
+    color: rgb(41, 154, 199);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+}
+
+footer ul li{
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+
+/* certify page css  */
+
+.certify{
+    background: #fff;
+    padding: 1rem 0;
+}
+
+.certify a{
+    text-decoration: none;
+    color: #888;
+}
+
+.certify span{
+    color: #999;
+}
+
+.stand{
+    background: linear-gradient(135deg,rgb(20, 20, 152),rgb(62, 161, 194));
+    color: #fff;
+    padding: 2.6rem 0;
+}
+
+.stand h5{
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.skills .box{
+    background: #fff;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, .3), -6px -6px 10px rgba(0, 0, 0, .1);
+    padding: 2rem 2rem 1.5rem 2rem;
+    border-radius: 3px;
+    margin-bottom: 3.5rem;
+    transition: all .4s;
+}
+
+.skills h4{
+    font-weight: 700;
+}
+
+.skills h5{
+    font-weight: 700;
+}
+
+.skills .box:hover{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .3), -3px -3px 10px rgba(0, 0, 0, .1);
+
+}
+
+.skills button{
+    background: none;
+    padding: 5px;
+    border: 1px solid green;
+    color: green;
+    border-radius: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 4rem;
+}
+
+.skills h4 i{
+    color: #999;
+    font-size: 1rem;
+}
+
+
+/*---------------------------
+contests page css starts
+---------------------------*/
+
+.contests .box{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background: #fff;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, .3), -6px -6px 10px rgba(0, 0, 0, .1);
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.contests .box:hover{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .3), -3px -3px 10px rgba(0, 0, 0, .1);
+}
+
+.contests .box:hover h5{
+    color: green;
+}
+
+.contests a{
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.contests a:hover{
+    text-decoration: underline;
+}
+
+.sign{
+    padding: 6px 2rem;
+    width: 12vw;
+    background: rgb(56, 149, 56);
+    border: none;
+    border-radius: 3px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, .3), -6px -6px 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-family: 'Chivo Mono', monospace;
+    color: #fff;
+    font-weight: 700;
+    transition: all .4s;
+}
+
+.sign a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.sign:hover{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .3), -3px -3px 10px rgba(0, 0, 0, .1);
+}
+
+.hidebox{
+    background: #fff;
+    padding: 1.5rem;
+    border-top: 1px solid #999;
+}
+
+.hidebox.active{
+    display: none;
+}
+
+.hidebox p{
+    font-size: 1.2rem;
+}
+
+.view{
+    padding: 6px 2rem;
+    border: 1px solid green;
+    color: green;
+    font-weight: 600;
+    cursor: pointer;font-family: 'Chivo Mono', monospace;
+    background: none;
+    border-radius: 3px;
+    width: 12vw;
+    white-space: nowrap;
+}
+
+.box.box2{
+    margin-top: 1.5rem;
+}
+
+.box2 h5{
+    color: #999;
+}
+
+.more{
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.3rem;
+}
+
+.more a{
+    text-decoration: none;
+}
+
+.more a:hover{
+    text-decoration: underline;
+}
+
+.filter span{
+    color: #999;
+} 
+
+.filter p{
+    cursor: pointer;
+    color: skyblue;
+    margin: .5rem 0;
+}
+
+.filter p:hover{
+    text-decoration: underline;
+}
+
+.filter hr{
+    margin: 1.5rem 0;
+    background: #999;
+}
+
+.contests .input{
+    display: flex;
+}
+
+.contests input[type="checkbox"]{
+    background: #fff;
+    margin-right: 10px;
+    width: 1rem;
+}
