@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #927DFC;
+}
+
+.wrapper{
+    background: #fff;
+    padding: 30px;
+    height: 288px;
+    border-radius: 9px;
+    width: 450px;
+    transition: height .4s ease;
+}
+
+.wrapper .upload-Box{
+    height: 225px;
+    border: 2px dashed #afafaf;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper.active .upload-Box{
+    border: none;
+}
+
+.wrapper .upload-Box p{
+    font-size: 1.06rem;
+    margin-top: 20px;
+}
+
+.wrapper.active{
+    height: auto;
+}
+
+.wrapper.wrapper.active .content{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper.active .upload-Box p{
+    display: none;
+}
+
+.wrapper.active .upload-Box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.wrapper .content{
+    margin-top: 28px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .4s ease;
+}
+
+.content .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .row .column{
+    width: calc(100% / 2 - 15px)
+}
+
+.row .column label{
+    font-size: 1.06rem;
+}
+
+.sizes .column input{
+    width: 100%;
+    margin-top: 5px;
+    height: 49px;
+    font-size: 1.06rem;
+    padding: 0 15px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.sizes .column input:focus{
+    border: 2px solid #927DFC;
+    padding: 0 14px;
+}
+
+
+.checkboxes{
+    margin-top: 20px;
+}
+
+.checkboxes .column{
+    display: flex;
+    align-items: center;
+}
+
+.checkboxes input{
+    width: 17px;
+    height: 17px;
+    accent-color: #927DFC;
+    margin-right: 9px;;
+}
+
+.content .download-btn{
+    padding: 15px 0;
+    width: 100%;
+    color: #fff;
+    outline: none;
+    font-size: 1.06rem;
+    cursor: pointer;
+    border: none;
+    margin: 30px 0 15px;
+    background: #927DFC;
+    text-transform: uppercase;
+    border-radius: 5px;
+}

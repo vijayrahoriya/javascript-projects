@@ -178,3 +178,32 @@ body{
     font-size: 1.2rem;
     box-shadow: 6px 6px 10px rgba(0,0,0,.3),-6px -6px 10px rgba(0,0,0,.1);
 }
+
+@media(max-width: 1200px){
+    .create{
+        width: 70%;
+        font-size: 1rem;
+    }
+    .icons i{
+        font-size: 2rem;
+    }
+    .input{
+        display: block;
+    }
+}
+@media(max-width: 1000px){
+    .first input{
+        font-size: 1rem;
+    }
+    .create{
+        font-weight: 400;
+    }
+    .icons i{
+        font-size: 1.7rem;
+    }
+}
+@media(max-width: 768px){
+    .bigbox{
+        width: auto;
+    }
+}

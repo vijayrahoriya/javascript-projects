@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(223, 200, 204);
+}
+
+.container{
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.inputes label{
+    margin-left: 5px;
+}
+
+.inputes{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}

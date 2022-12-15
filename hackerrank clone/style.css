@@ -23,6 +23,10 @@ body{
     border-bottom: none;
 }
 
+button{
+    white-space: nowrap;
+}
+
 .navbar-brand{
     font-weight: 800;
     font-size: 1.7rem;
@@ -310,6 +314,7 @@ footer{
 footer ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 footer ul li{
@@ -318,7 +323,9 @@ footer ul li{
 }
 
 
-/* certify page css  */
+/*--------------------
+ certify page css 
+ -------------------- */
 
 .certify{
     background: #fff;
@@ -354,6 +361,10 @@ footer ul li{
     transition: all .4s;
 }
 
+.topbox{
+    height: 15vh;
+}
+
 .skills h4{
     font-weight: 700;
 }
@@ -375,7 +386,7 @@ footer ul li{
     border-radius: 2px;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
 }
 
 .skills h4 i{
@@ -468,6 +479,8 @@ contests page css starts
     margin-top: 1.5rem;
 }
 
+
+
 .box2 h5{
     color: #999;
 }
@@ -513,4 +526,79 @@ contests page css starts
     background: #fff;
     margin-right: 10px;
     width: 1rem;
+}
+
+
+/*------------------------
+media query starts
+-------------------------*/
+
+@media(max-width: 1200px){
+    .first-row .start{
+        width: 70%;
+    }
+    .box h5{
+        font-size: 1rem;
+    }
+    .view{
+        font-weight: 500;
+        padding: 6px;
+        width: 14vw;
+    }
+    .sign{
+        padding: 6px 0;
+    }
+}
+
+@media(max-width:1000px){
+    .first-row img{
+        width: 100%;
+    }
+    .but{
+        font-size: 13px;
+        padding:5px;
+    }
+    .first-row .start{
+        width: 80%;
+    }
+    .buttons-row button{
+        font-size: 1rem;
+    }
+    .last-row button{
+        width: 50%;
+    }
+    .navbar-toggler-icon{
+        background-color: #fff;
+    }
+    .navbar li a.active::after {
+        width: 12%;
+        left: 0;
+        bottom: 0;
+    }
+    .view{
+        margin: 10px 0;
+        width: 60%;
+        right: 0;
+    }
+    
+}
+
+@media(max-width: 768px){
+    .first-row{
+        height: auto;
+    }
+    .first-row .start{
+        margin: 10px 0;
+    }
+    .contests .box{
+        display: block;
+        text-align: center;
+    }
+    .sign{
+        width: 70%;
+        margin: 10px 0;
+    }
+    .last-row button{
+        width: auto;
+    }
 }
