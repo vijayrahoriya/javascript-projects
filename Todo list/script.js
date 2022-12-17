@@ -1,57 +1,64 @@
-const addEl = document.querySelector('.top button');
+const formEl = document.querySelector('.form'),
+inputEl = formEl.querySelector('input');
 
-const addLSData = () =>{
-    let mainEl = document.querySelectorAll('.main');
-    let topic = [];
-    mainEl.forEach((item)=>{
-        topic.push(item.innerHTML)
+const todoList = (data)=>{
+    let lists = document.createElement("ul");
+    lists.classList.add('lists');
+    console.log(lists)
+    let text = `
+            <li class=""><span></span><i class="fa-solid fa-square-check"></i><i class="fa-solid fa-trash"></i></li>`;
+
+    lists.innerHTML = text;
+    const liEl = lists.querySelector('li');
+    if(data){
+        inputEl.value = data.name
+    }
+    liEl.querySelector('span').innerHTML = inputEl.value;
+
+    if(data && data.checked){
+        liEl.classList.add('checked')
+    }
+
+    formEl.appendChild(lists)
+    inputEl.value = ""
+
+    const checkEl = lists.querySelectorAll('.fa-square-check');
+    const deleteEl = lists.querySelectorAll('.fa-trash');
+
+    checkEl.forEach(item => {
+        item.addEventListener('click',()=>{
+            item.parentElement.classList.toggle('checked');
+            updateLoacal();
+        })
     })
-    // console.log(topic)
-    localStorage.setItem('topics',JSON.stringify(topic))
+
+    deleteEl.forEach(item=>{
+        item.addEventListener('click',()=>{
+            item.parentElement.remove();
+            updateLoacal();
+        })
+    })
+    updateLoacal();
 }
 
-const addNewTask = (text) =>{
-    let topic = document.createElement('div');
-    topic.classList.add('topics');
-    let inner = `<textarea class=""></textarea>
-                <div class="main hidden"></div>
-                <button class="edit">Edit</button>
-                <button class="delete">Delete</button>`;
+formEl.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    todoList();
+})
 
-    topic.insertAdjacentHTML("beforeend",inner);
-
-    const deleteEl = topic.querySelector(".delete");
-    const editEl = topic.querySelector('.edit');
-    const textarea = topic.querySelector('textarea');
-    const mainDiv = topic.querySelector('.main');
-    const inputEl = document.querySelector('.top input');
-
-    mainDiv.classList.toggle('hidden');
-    textarea.classList.toggle('hidden')
-    mainDiv.innerHTML = text;
-    textarea.value = text
-    
-    document.getElementsByClassName('container')[0].appendChild(topic);
-    deleteEl.addEventListener('click',()=>{
-        topic.remove();
-        addLSData();
+function updateLoacal(){
+    let liEl = document.querySelectorAll('li');
+    let list = [];
+    liEl.forEach(item=>{
+        list.push({
+            name : item.innerText,
+            checked : item.classList.contains('checked')
+        })
     })
-
-    editEl.addEventListener('click',()=>{
-        mainDiv.classList.toggle('hidden');
-        textarea.classList.toggle('hidden')
-    })
-
-    textarea.value = inputEl.value
-    mainDiv.innerHTML = textarea.value; 
-    addLSData();
-
+    localStorage.setItem('list',JSON.stringify(list));
 }
 
-let topic = JSON.parse(localStorage.getItem('topics'));
-// console.log(topic)
-// topic.forEach((item)=>{
-//     addNewTask(item)
-// })
-
-addEl.addEventListener('click', addNewTask)
+let listEl = JSON.parse(localStorage.getItem('list'));
+listEl.forEach(item=>{
+    todoList(item)
+})

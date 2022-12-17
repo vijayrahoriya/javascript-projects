@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* width: 100vw; */
+    height: 100vh;
+    padding: 2rem;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: orangered;
+    text-decoration: underline;
+}
+
+input{
+    width: 100%;;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+input:focus{
+    border: 2px solid skyblue;
+}
+
+table{
+    width: 100%;
+}
+
+table thead{
+    background: lightgray;
+}
+
+th{
+    width: 30%;
+    text-align: left;
+}
+
+tr{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+td{
+    width: 30%;
+}

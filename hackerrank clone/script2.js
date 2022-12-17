@@ -58,12 +58,7 @@ email.addEventListener('blur', () => {
 let data = []
 createEl.addEventListener('click', (e) => {
     e.preventDefault();
-    // let emailValue = email.value
-    // console.log(userValue)
-    // console.log(data)
     var sdata = JSON.parse(localStorage.getItem('info'));
-    // console.log(!sdata)
-    // console.log(typeof sdata)
     if (!sdata) {
         let userValue = user.value
 
@@ -88,6 +83,7 @@ createEl.addEventListener('click', (e) => {
 
     }
 
-    // console.log(data)
 })
+
+
 

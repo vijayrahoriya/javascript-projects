@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.main_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: #f6f6f6; */
+    background: linear-gradient(135deg , rgb(208, 93, 51) 20%, rgb(200, 145, 44) 80%);
+    height: 100vh;
+    width: 100vw;
+}
+
+.music_box{
+    width: 35rem;
+    height: 55rem;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+    padding: 3rem;
+    box-shadow: 0 .3rem .4rem .3rem rgba(0,0,0,.1);
+}
+
+#title{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    text-shadow: 0 .3rem .4rem rgba(0,0,0,.6);
+    margin-bottom: 1rem;
+}
+
+#artist{
+    font-size: 2rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-shadow: 0 .3rem .4rem rgba(0,0,0,.2);
+    margin-bottom: 4rem;
+}
+
+.img_container{
+    width: 25rem;
+    height: 25rem;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 .5rem .5rem .2rem rgba(0,0,0,.2);
+}
+
+.music_controls{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    box-sizing: border-box;
+}
+
+i{
+    transition: color .3s;
+}
+
+i:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+#play{
+    background: #000;
+    /* padding: 1rem 1.3rem; */
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .6s;
+    box-shadow: 0 .2rem .5rem .5rem rgba(0,0,0,.2);
+}
+
+#play:hover{
+    background: #f6f6f6;
+    color: #000;
+}
+
+.anime{
+    animation: rotateImg 3s linear infinite;
+}
+
+@keyframes rotateImg{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/*-------------------
+progress bar styling
+------------------*/
+
+.time_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+.progress_container{
+    margin-top: .5rem;
+    width: 100%;
+    height: .3rem;
+    box-shadow: 0 .3rem .5rem .1rem rgba(0,0,0,.2);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.progress{
+    background: #000;
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+}
