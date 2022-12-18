@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+.main_container{
+    background: rgb(43, 43, 95);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: rgb(26, 143, 189);
+    width: 60vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.box{
+    background: #fff;
+    border-radius: 3px;
+    position: relative;
+    width: 40vw;
+}
+
+.icon{
+    text-align: right;
+    padding-right: .8rem;
+    position: relative;
+}
+
+.fa-twitter{
+    position: relative;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.icon::before{
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: rgb(183, 180, 180);
+    position: absolute;
+    right: 0px;
+    top: 0;
+    border-radius: 0 0 0px 100px;
+    z-index: 0;
+}
+
+.top{
+    padding: 0 2rem;
+    font-size: 4rem;
+    color: rgb(183, 180, 180);
+    margin-bottom: 2rem;
+}
+
+.mid{
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.author{
+    text-align: right;
+    padding: 0 2rem;
+    margin-bottom: 4.8rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+button{
+    background: rgba(48, 48, 239, 0.892);
+    border:none;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .4s;
+    border-radius: 0 0 3px 3px;
+}
+
+button:hover{
+    opacity: .9;
+    letter-spacing: 1.2px;
+}

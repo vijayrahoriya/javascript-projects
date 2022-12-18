@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(87, 184, 222);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.result{
+    background: #333;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    font-size: 2rem;
+    display: none;
+    font-weight: 600;
+    width: 60vw ;
+    padding: 1rem;
+}
+
+.closeicon{
+    position: absolute;
+    right: 15%;
+    top: 3%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.fa-times.active{
+    display: none;
+}
+
+.box{
+    background: #333;
+    padding: 3rem;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5rem;
+}
+
+h2{
+    color: rgb(87, 184, 222);
+    font-size: 2rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    position: relative;
+    animation: scaleup 2s ease-in infinite;
+}
+
+.line{
+    position: relative;
+    height: 140px;
+}
+
+
+.line::before{
+    content: "";
+    width: 5px;
+    height: 100%;
+    background: rgb(87, 184, 222);
+    left: -15px;
+    top: -10px;
+    position: absolute;
+    border-radius: 5px;
+    animation: none;
+}
+
+@keyframes scaleup{
+    from{
+        font-size: 1.9rem;
+    }
+    to{
+        font-size: 2rem;
+    }
+}
+
+.right{
+    width: 50%;;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 2px solid rgb(113, 108, 108);
+    background: transparent;
+    padding: 10px;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 600;
+    resize: none;
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  outline: none;
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+button{
+    font-family: 'Jost', sans-serif;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+    color: rgb(87, 184, 222);
+    cursor: pointer;
+    outline: none;
+    transition: color .4s;
+}
+
+button:hover{
+    opacity: .7;
+    letter-spacing: .5px;
+}
+

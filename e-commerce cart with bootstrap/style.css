@@ -1,0 +1,89 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #dce0e0;
+}
+
+img{
+    box-shadow: 0 4px 8px 5px rgba(0,0,0,.1);
+    min-height: 200px;
+}
+
+p{
+    color: #999;
+}
+
+ul{
+    height: 40px;
+}
+
+ul li .page-link{
+    height: 40px;
+    width: 50px;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 0px  !important;
+}
+
+ul li .page-link:hover{
+    color: gray;border: 1px solid #000;
+    background: transparent;
+}
+
+ul li{
+    height: 100%;
+}
+
+.pagination{
+    position: relative;
+}
+
+.pagination::after{
+    content: "Note(1 piece)";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 100%;
+    height: 20px;
+}
+
+.col-md-8 input{
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.col-md-8 .col-md-6 p{
+    color: #999;
+}
+
+.col-md-3 .row{
+    box-shadow: 0 4px 6px rgba(0,0,0,.3);
+}
+
+#coupon{
+    cursor: pointer;
+}
+
+#hideBox{
+    display: none;
+    transition: all 1s;
+}
+
+#hideBox.active{
+    display: block;
+}
+
+i{
+    cursor: pointer;
+}
+
+i.fa-trash:hover,.fa-heart:hover{
+    color: red;
+}
