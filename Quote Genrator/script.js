@@ -14,13 +14,14 @@ btnEl.addEventListener('click',async()=>{
         var aAuthor = random.author
         quote.innerHTML = text;
         authorEl.innerHTML = aAuthor
-
-        twitterEl.addEventListener('click',()=>{
-            let tweetPost = `https://twitter.com/intent/tweet?text=${quote.innerHTML}`;
-            window.open(tweetPost);
-        })
     }
     catch(err){
         console.log(err);
     }
+})
+
+twitterEl.addEventListener('click',()=>{
+    let tweetPost = `https://twitter.com/intent/tweet?text=${quote.innerHTML}`;
+    window.open(tweetPost);
+    // this.style.transform = "rotate(360deg)"
 })

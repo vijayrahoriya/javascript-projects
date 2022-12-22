@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: pink;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box{
+    background: #ccc;
+    width: 300px;
+    height: 300px;
+    color: #fff;
+    font-weight: 600;
+    margin: auto;
+    font-size: 2rem;
+    border: 5px solid #ddd;
+    border-radius: 50%;
+    position: relative;
+}
+
+.top{
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+}
+
+.mid{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.left{
+    padding-left: 20px;
+}
+
+.middle{
+    background: green;
+    z-index: 1;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.second{
+    position: absolute;
+    width:3px;
+    height: 90px;
+    background: yellowgreen;
+    border-radius: 50% 50% 0 0;
+    left: 49.9%;
+    transform-origin: bottom;
+    bottom: 17px;
+}
+
+.minute{
+    position: absolute;
+    width:4px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50% 50% 0 0;
+    left: 49.5%;
+    bottom: 15px;
+    transform-origin: bottom;
+
+}
+
+.hour{
+    position: absolute;
+    width:6px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50% 50% 0 0;
+    left: 48.9%;
+    transform-origin: bottom;
+    bottom: 17px;
+}
+
+.right{
+    padding-right: 20px;
+}
+
+.bot{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+}
+
+

@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: #E3F2FD;
+}
+
+body, .video-controls, .video-timer , .options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container{
+    max-width: 900px;
+    width: 98%;
+    background: #000;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container.fullscreenplay{
+    max-width: 100%;
+    width: 100%;
+}
+
+.container.show-controls .wrapper{
+    opacity: 1;
+    bottom: 0;
+    pointer-events: auto;
+    transition: all .13s ease;
+}
+
+.wrapper{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -15px;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    transition: all .08s ease;
+}
+
+.video-controls {
+    padding: 5px 20px 10px;
+}
+
+.video-controls .options{
+    width: 100%;;
+}
+
+.options button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    background: none;
+    font-size: 19px;
+    cursor: pointer;
+
+}
+
+.video-timeline{
+    height: 7px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.progress-area{
+    height: 3px;
+    background: rgba(255,255,255,.7);
+}
+
+.progress-area span,.progress-area .progress-bar::before{
+    display: none;
+}
+
+.video-timeline:hover .progress-area span,
+.video-timeline:hover .progress-area .progress-bar::before{
+    display: block;
+}
+
+.progress-area .progress-bar{
+    height: 100%;
+    width: 0%;
+    background: #2289ff;;
+    position: relative;
+}
+
+.progress-area .progress-bar::before{
+    content: "";
+    right: 0;
+    top: 50%;
+    height: 13px;
+    width: 13px;
+    background: inherit;
+    position: absolute;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.progress-area span{
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    font-size: 14px;
+    color: #fff;
+    transform: translateX(-50%);
+}
+
+.video-controls .options:last-child{
+    justify-content: end;
+}
+
+.video-controls .options:first-child{
+    justify-content: flex-start;
+}
+
+.options button :where(i,span){
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+}
+
+.options input{
+    height: 4px;
+    max-width: 75px;
+}
+
+.options .video-timer{
+    font-size: 14px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.options .seprate{
+    margin: 0 5px;
+    font-size: 16px;
+}
+
+.wrapper::before{
+    content: "";
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    height: calc(100% + 35px);
+    z-index: -1;
+    background: linear-gradient(to top,rgba(0,0,0,.7), transparent);
+
+}
+
+.playback-content{
+    position: relative;
+}
+
+.playback-content .speed-options{
+    position: absolute;
+    color: #000;
+    background: #fff;
+    bottom: 40px;
+    opacity: 1;
+    pointer-events: auto;
+    list-style-type: none;
+    border-radius: 5px;
+    width: 80px;
+    transition: opacity .13s ease;
+}
+
+.playback-content .speed-options.show{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.playback-content .speed-options{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.speed-options li.active{
+    color: #fff;
+    background: #2289ff;
+}
+
+.speed-options li{
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 0 5px 15px;
+}
+
+.container video{
+    width: 100%;
+}

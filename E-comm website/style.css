@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    background: skyblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigBox{
+    width: 80vw;
+    display: flex;
+    overflow: hidden;
+}
+
+.box{
+    background: rgb(36, 36, 36);
+    height: 80vh;
+    padding: 3rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.firstBox{
+    width: 100%;
+}
+
+
+.topBox{
+    margin-bottom: 3rem;
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: .1px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+ul li.active{
+    color: #fff;
+}
+
+.productBox{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.productBox .fa-heart{
+    position: absolute;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.productBox .fa-heart:hover{
+    color: orangered;
+}
+
+.hear{
+    padding: 2rem 0;
+    width: 5%;
+}
+
+.productBox img{
+    width: 400px;
+    border-radius: 10px;
+}
+
+.box.box2 img{
+    height: 300px;
+}
+
+.productBox .left{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.productBox .right{
+    padding: 2rem;
+    width: 55%;
+}
+
+h2{
+    margin-bottom: 13px;
+    font-size: 2rem;
+    font-weight: 400;
+    word-spacing: 2px;
+}
+
+.productBox p{
+    font-size: 1.1rem;
+    line-height: 21px;
+}
+
+.rating{
+    margin: 2rem 0 ;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating i{
+    color: gold;
+    margin: 0 5px;
+}
+
+.rating .review{
+    color: #888;
+}
+
+.buttons .btn{
+    margin-top: 10px;
+    padding: 10px 40px;
+    text-align: center;
+    margin-right: 10px;
+    background: rgb(40, 40, 40);
+    color: #888;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 3px;
+    border: 2px solid rgb(40, 40, 40);
+    transition: all .4s;
+}
+
+.buttons h5{
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+.buttons span{
+    font-size: .8rem;
+}
+
+.buttons .btn:hover{
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.lastBox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.lastBox .left{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.lastBox i{
+    cursor: pointer;
+    color: #888;
+}
+
+.lastBox i:hover{
+    color: #fff;
+}
+
+.lastBox .left .fa-arrow-right{
+    margin-left: 3rem;
+}
+
+.lastBox button{
+    padding: 13px 20px;
+    background: transparent;
+    color: orange;
+    border: 2px solid orange;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: all .4s;
+}
+
+.lastBox button:hover{
+   letter-spacing: 1px;
+}
+
+.box.box2{
+    transition: all .5s;
+}
+
+.carousel-control-prev{
+    position: absolute;
+    left: -3%;
+    bottom: -75%;
+}
+
+.carousel-control-next{
+    position: absolute;
+    left: 3%;
+    bottom: -75%;
+}
+
+.carousel-control-prev-icon{
+    background: transparent;
+    color: #fff;
+}
+
+.carousel-control-next-icon{
+    background: transparent;
+    color: #fff;
+}
+
+#second{
+    display: none;
+}
+
+#second1{
+    display: none;
+}

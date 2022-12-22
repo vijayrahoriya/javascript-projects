@@ -457,6 +457,7 @@ contests page css starts
 
 .hidebox.active{
     display: none;
+    transition: display 1s ease;
 }
 
 .hidebox p{

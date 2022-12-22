@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Carter One', cursive;
+}
+
+.top{
+    padding: 20px;
+    text-align: center;
+    background: #20bfb6;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    text-shadow: 0 6px 6px rgba(100,100,100.3);
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    background: #54f3eb;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background: #20bfb6;
+    height: 300px;
+    width: 40vw;
+    transform: translateY(-50%);
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.3 );
+}
+
+.hidden{
+    display: none;
+}
+
+h5{
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+input{
+    background: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    text-align: center;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.guess{
+    padding: 10px 20px;
+    background: #fff;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: orchid;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.guess:hover{
+    letter-spacing: 1px;
+}
+
+#start{
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(.65,-0.25,0.25,1.95);
+    ;
+}
+
+#start:hover,#start:focus,#start:active{
+    letter-spacing: .125rem;
+    word-spacing: .2rem;
+}
