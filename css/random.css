@@ -58,8 +58,9 @@ i{
 }
 button{
     width: 100%;
-    padding: 8px;;
+    padding: 15px;;
     border: none;
+    color: #fff;
     border-radius: .25rem;
     background: greenyellow;
     font-size: 15px;
