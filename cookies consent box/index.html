@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Cookies Consent Box</title>
+</head>
+<body>
+    <div class="wrapper">
+        <i class="fa-solid fa-cookie-bite"></i>
+        <div class="content">
+            <header>Cookies Constent</header>
+            <p>This website use cookies to ensure you get the best experience on our website.</p>
+            <div class="buttons">
+                <button class="item">I understand</button>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const cookieBox = document.querySelector('.wrapper'),
+        acceptBtn = document.querySelector('.buttons button');
+
+        acceptBtn.onclick = ()=>{
+            //setting cookie for 1 month, after 1 month cookie will be expired automatically
+            document.cookie = "CookieBy=Vijay; max-age="+60*60*24*30;
+            if(document.cookie){//if cookie is set
+                cookieBox.classList.add('hide');
+            }else{
+                alert('Cookies can not be set');
+            }
+            //let's hide the cookie box if cookie is set and not expired
+            let checkCookie = document.cookie.indexOf('CookieBy=Vijay');
+            checkCookie != 1 ? cookieBox.classList.add('hide') : cookieBox.classList.remove('hide')
+        }
+    </script>
+</body>
+</html>

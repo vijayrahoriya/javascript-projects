@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .top{
+            background: #000;
+            height: 50vh;
+        }
+        .bottom{
+            background: rgb(23, 137, 182);
+            height: 50vh;
+        }
+        .icons{
+            position: absolute;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            top: 50%;
+        }
+
+        span{
+            font-size: 2rem;
+        }
+
+        i{
+            font-size: 1.8rem;
+            margin: 0 10px;opacity: .5;
+        }
+
+    </style>
+    <title>Detect User Browser</title>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="icons">
+        <span>Browser: </span>
+        <i class="fa-brands fa-chrome chrome" style="color:orangered"></i>
+        <i class="fa-brands fa-edge edge" style="color: skyblue"></i>
+        <i class="fa-brands fa-firefox mozila" style="color: red;"></i>
+        <i class="fa-brands fa-safari safari" style="color: skyblue"></i>
+    </div>
+    <div class="bottom"></div>
+
+    <script>
+        let userAgent = navigator.userAgent;
+        // console.log(userAgent)
+        let browser;
+        if(userAgent.match(/edge/i)){
+            browser = "edge";
+        }else if(userAgent.match(/mozilla/i)){
+            browser = "mozila"
+        }
+        else if(userAgent.match(/chrome/i)){
+            browser = "chrome"
+        }
+        else if(userAgent.match(/safari/i)){
+            browser = "safari"
+        }else{
+            alert('other browser')
+        }
+
+        let elem = document.querySelector(`.icons .${browser}`)
+        elem.style.opacity = '1'
+    </script>
+</body>
+</html>
