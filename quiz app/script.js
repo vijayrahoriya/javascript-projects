@@ -11,7 +11,6 @@ const startArea = document.querySelector('.start-buttons'),
     questionNumber = document.querySelector('.quiz-area .info .numbers'),
     resultEl = document.querySelector('.result'),
     correctAnsNum = document.querySelector('.correctAns'),
-    replayBtn = document.querySelector('.replay'),
     quitBtn = document.querySelector('.quit');
 
 let time = 15,
@@ -148,21 +147,4 @@ function showResults() {
 
 quitBtn.onclick = () => {
     window.location.reload();
-}
-
-replayBtn.onclick = () => {
-    nextQuesBtn.innerHTML = 'Next'
-    time = 15,
-        width = 0,
-        index = 0,
-        questionNum = 1,
-        correct = 0;
-    timer = setInterval(() => {
-        showquizArea();
-        time--
-        width = width + (100 / 15)
-    }, 1000);
-    resultEl.classList.remove('show');
-    quizArea.classList.add('show')
-    showquizArea();
 }

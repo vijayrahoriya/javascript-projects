@@ -23,6 +23,10 @@ body{
     padding: 15px 100px;
     background: #111;
     border-bottom: 1px solid #FFF;
+    position: fixed;
+    width: 100%;
+    background: #111;
+    z-index: 1;
 }
 
 nav{
@@ -273,6 +277,12 @@ ul a:hover::before{
     bottom: 0;
 }
 
+.work a{
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 .work p{
     line-break: anywhere;
     text-align: center;
@@ -285,6 +295,11 @@ ul a:hover::before{
 .more{
     text-align: center;
     margin: 20px 0;
+}
+
+.more a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .btn{
@@ -310,6 +325,17 @@ ul a:hover::before{
 
 .contact-info p strong{
     color: crimson;
+}
+
+.contact-info h4{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.contact-info .social a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .contact-info .social i{
