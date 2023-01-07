@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(6, 127, 175);
+}
+
+.wrapper{
+    background: #fff;
+    width: 400px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.3);
+}
+
+.wrapper header{
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+ul li{
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+ul li.selected{
+    border: 2px solid rgb(6, 127, 175);
+}
+
+ul li.show{
+    border: 2px solid rgb(6, 127, 175);
+}
+
+ul li .languages{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+li .percent{
+    display: none;
+}
+
+li.selectAll .percent{
+    display: block;
+}
+
+li.selected .circle{
+    border: 2px solid rgb(6, 127, 175);
+}
+
+li.selected .circle::before{
+    background: rgb(6, 127, 175);
+}
+
+li.selected .progress{
+    display: block;
+}
+
+li.selectAll .progress{
+    display: block;
+}
+
+
+.column{
+    display: flex;
+    align-items: center;
+}
+
+ul li .circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    position: relative;
+}
+
+ul li .circle::before{
+    content: "";
+    width: 13px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 13px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.lang{
+    padding-left: 10px;
+}
+
+.progress{
+    background: lightgray;
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+    position: relative;
+    display: none;
+}
+
+.progress .progress-bar{
+    background: rgb(6, 127, 175);
+    height: 100%;
+    width: 30%;
+    border-radius: 8px;
+}
+

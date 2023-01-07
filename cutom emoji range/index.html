@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Emoji Range</title>
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="emoji">
+            <i class="fa-regular fa-face-angry" data-color="red" style="color: red"></i>
+            <i class="fa-regular fa-face-surprise" data-color="orchid" style="color: orchid"></i>
+            <i class="fa-regular fa-face-rolling-eyes" data-color="orange"  style="color: orange"></i>
+            <i class="fa-regular fa-face-kiss-wink-heart" data-color="orangered"  style="color: orangered"></i>
+            <i class="fa-regular fa-face-grin-hearts" data-color="pink"  style="color: pink"></i>
+        </div>
+        <div class="slider">
+            <div class="thumb"><span></span></div>
+            <div class="progress-bar"></div>
+            <input type="range" value="0" max="100" min="0">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

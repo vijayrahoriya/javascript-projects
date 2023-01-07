@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js" integrity="sha512-6kvhZ/39gRVLmoM/6JxbbJVTYzL/gnbDVsHACLx/31IREU4l3sI7yeO0d4gw8xU5Mpmm/17LMaDHOCf+TvuC2Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Circle Progress</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="card">
+            <div class="circle">
+                <div class="bar"></div>
+                <div class="box"><span>85%</span></div>
+            </div>
+            <div class="text">HTML & CSS</div>
+        </div>
+        <div class="card">
+            <div class="circle js">
+                <div class="bar"></div>
+                <div class="box"><span>70%</span></div>
+            </div>
+            <div class="text">JavaScript</div>
+        </div>
+        <div class="card">
+            <div class="circle react">
+                <div class="bar"></div>
+                <div class="box"><span>60%</span></div>
+            </div>
+            <div class="text">React Js</div>
+        </div>
+    </div>
+
+    <script>
+        let options = {
+            startAngle: -1.55,
+            size : 150,
+            value: 0.85,
+            fill : {gradient: ['#a445b2','#fa4299']}
+        }
+        $('.circle .bar').circleProgress(options).on('circle-animation-progress',function(event, progress, stepValue){
+            $(this).parent().find('span').text(String(stepValue.toFixed(2).substr(2) + "%"))
+        })
+        $('.js .bar').circleProgress({
+            value: 0.70
+        })
+        $('.react .bar').circleProgress({
+            value: 0.60
+        })
+    </script>
+
+</body>
+</html>

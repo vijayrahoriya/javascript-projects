@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: #efefef;
+}
+
+.wrapper{
+    background: #fff;
+    width: 750px;
+    height: 500px;
+    box-shadow: 0 0 15px rgba(0,0,0,.15);
+    position: relative;
+    border: 7px solid #fff;
+    overflow: hidden;
+}
+
+.wrapper .images{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.wrapper .images .img-1{
+    width: 100%;
+    height: 100%;
+    background: url('camera.jpg') no-repeat;
+    background-size: cover;
+}
+
+.wrapper .images .img-2{
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    background: url('camera.jpg') no-repeat;
+    background-size: cover;
+    filter: grayscale();
+}
+
+.wrapper .slider{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.wrapper .slider input{
+    width: 100%;
+    -webkit-appearance: none;
+    background: none;
+    outline: none;
+}
+
+.slider input::-webkit-slider-thumb{
+    height: 486px;
+    width: 3px;
+    background: none;
+    -webkit-appearance: none;
+    cursor: col-resize;
+}
+
+.slider .drag-line{
+    width: 3px;
+    height: 486px;
+    position: absolute;
+    /* background: red; */
+    left: 49.85%;
+    pointer-events: none;
+}
+
+.slider .drag-line::before,
+.slider .drag-line::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 222px;
+    background: #fff;
+}
+
+.slider .drag-line::after{
+    bottom: 0;
+}
+
+.slider .drag-line::before{
+    top: 0;
+}
+
+.slider .drag-line span{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.slider .drag-line span::before,
+.slider .drag-line span::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    border: 10px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.slider .drag-line span::before{
+    left: 40%;
+    border-left-color: #fff;
+}
+
+.slider .drag-line span::after{
+    left: 60%;
+    border-top-color: #fff;
+}
