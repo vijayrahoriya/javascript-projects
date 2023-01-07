@@ -277,7 +277,7 @@ ul a:hover::before{
     bottom: 0;
 }
 
-.work a{
+.work .content a{
     color: #fff;
     font-size: 2rem;
     cursor: pointer;
