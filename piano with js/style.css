@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    background: rgb(188, 222, 236);
+}
+
+.wrapper{
+    background: #000;
+    width: 850px;
+    padding: 35px 30px;
+    border-radius: 20px;
+}
+
+.wrapper header{
+    color: #b2b2b2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper .column{
+    display: flex;
+    align-items: center;
+}
+
+.wrapper h2{
+    font-size: 2rem;
+}
+
+.wrapper .column span{
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+
+.wrapper .volume input{
+    accent-color: #b2b2b2;
+    outline: none;
+    margin-left: 10px;
+    border: none;
+}
+
+.wrapper .show input{
+    appearance: none;
+    height: 30px;
+    width: 60px;
+    background: #555;
+    border-radius: 50px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.wrapper .show input::before{
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    background: #b2b2b2;
+    border-radius: inherit;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    transition: all .4s ease;
+}
+
+.wrapper .show input:checked::before{
+    left: 30px;
+    background: #fff;
+}
+
+.piano-keys{
+    margin-top: 40px;
+    display: flex;
+    color: #b2b2b2;
+    list-style: none;
+}
+
+.piano-keys .key{
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    transition: all .4s ease;
+}
+
+.piano-keys .key.active{
+    opacity: .9;
+    transform: scale(.99);
+}
+
+.piano-keys .white{
+    border-radius: 10px;
+    background: linear-gradient(#fff 95%, #eee 4%);
+    z-index: 1;
+    border: 1px solid #000;
+    width: 90px;
+    height: 230px;
+}
+
+.piano-keys .black{
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(#111 95%, #000 4%);
+    width: 40px;
+    margin: 0 -22px 0 -22px;
+    height: 140px;
+    z-index: 2;
+}
+
+.piano-keys span{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-size: 1.13rem;
+    transform: translateX(-50%);
+}
+
+.piano-keys span.hide{
+    display: none;
+}
