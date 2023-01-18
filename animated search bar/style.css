@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.navbar{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bar{
+    background: #000;
+    color: #fff;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all .4s ease;
+    transform-origin: center;
+}
+
+.bar i{
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.bar.active{
+    width: 300px;
+}
+
+.lists{
+    background: #000;
+    margin-top: 20px;
+    border-radius: 5px;
+    position: relative;
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+.lists.active{
+    opacity: 1;
+}
+
+.lists::before{
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: 14px;
+    background: #000;
+    height: 30px;
+    width: 30px;
+    transform: rotate(45deg);
+    z-index: -11;
+}
+
+.lists li{
+    list-style: none;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    transition: all .4s ease;
+    border: 2px solid #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.lists li:hover{
+    border: 2px solid skyblue;
+    color: skyblue;
+}

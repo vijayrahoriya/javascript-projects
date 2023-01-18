@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Card 3D Effect</title>
+</head>
+
+<body>
+    <div class="card">
+        <span class="fa fa-user"></span>
+        <header>Card With 3d Effect</header>
+        <p>Follow us on</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script>
+        $('body').mousemove(function(p){
+            let rotateX = -($(window).innerWidth()/2-p.pageX)/20
+            let rotateY = -($(window).innerHeight()/2-p.pageY)/10
+            $('.card').css('transform','rotate('+rotateX+'deg) rotateY('+rotateY+'deg)')
+        })
+        $(document).mouseout(function(){
+            $('.card').css('transform','')
+        })
+    </script>
+</body>
+
+</html>

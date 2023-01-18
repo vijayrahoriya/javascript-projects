@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Animated Login Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>Login Form</header>
+        <form>
+            <div class="input-field">
+                <input type="text" required>
+                <label>Email or Username</label>
+            </div>
+            <div class="input-field">
+                <input class="pass" type="password" required>
+                <label>Password</label>
+                <span class="show">SHOW</span>
+            </div>
+            <div class="button">
+                <div class="inner"></div>
+                <button>Login</button>
+            </div>
+        </form>
+        <div class="auth">Or login with</div>
+        <div class="links">
+            <div class="facebook">
+            <i class="fa-brands fa-square-facebook"><span>Facebook</span></i>
+            </div>
+            <div class="google">
+                <i class="fa-brands fa-square-google-plus"><span>Google</span></i>
+            </div>
+        </div>
+        <div class="signup">
+            Not a memeber? <a href="#">Signup Now</a>
+        </div>
+
+    </div>
+
+    <script>
+        let inputEl = document.querySelector('.pass')
+        let show = document.querySelector('.show')
+
+        show.addEventListener('click',active);
+        function active(){
+            if(inputEl.type === 'password'){
+                inputEl.type = 'text'
+                show.innerHTML = 'HIDE'
+            }else{
+                inputEl.type ='password'
+                show.innerHTML = "SHOW"
+            }
+        }
+    </script>
+
+</body>
+</html>
