@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess Number Game</title>
+</head>
+<body>
+
+    <div class="points">
+        <header>Some points</header>
+        <li>You have only 10 chance to guess the correct number.</li>
+        <li>Once You start the game you can not quit.</li>
+        <button class="start">Start Game</button>
+    </div>
+
+    <div class="wrapper">
+        <header>I am thinking of a number between 1-100.<br> Can You guess it?</header>
+        <input type="number" placeholder="Number" autofocus>
+        <button class="guessBtn">Guess</button>
+        <div class="info"></div>
+        <span class="count">No. of guess: 0</span>
+        <span class="Guessed">Number are: none</span> 
+    </div>
+
+    <div class="result">
+        <span class="emoji"></span>
+        <div class="data"></div>
+        <button class="restart">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

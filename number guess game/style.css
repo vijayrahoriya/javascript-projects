@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(92,125,151);
+}
+
+.points{
+    background: #fff;
+    width: 500px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.points.hide{
+    display: none;
+}
+
+.wrapper{
+    background: #fff;
+    width: 500px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    display: none;
+    transition: all .3s;
+}
+
+.wrapper.show{
+    display: flex;
+}
+
+.result{
+    background: #fff;
+    width: 500px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    display: none;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.result.show{
+    display: flex;
+}
+
+.result span{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header{
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+input{
+    width: 60px;
+    height: 50px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+    font-size: 1rem;
+    -webkit-appearance: none;
+}
+
+.info{
+    display: none;
+    transition: all .3s;
+}
+
+.info.active{
+    display: block
+}
+
+button{
+    background-color: rgb(92,125,151);
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: none;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all .4s;
+}
+
+button:active{
+    transform: scale(.98);
+}
