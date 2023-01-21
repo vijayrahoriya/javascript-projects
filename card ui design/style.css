@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+:root{
+    --color: rgb(220,51,45);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(241, 240, 240);
+}
+
+.wrapper,.colorsBox{
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    width: 300px;
+}
+
+header{
+    background: var(--color);
+    height: 120px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info{
+    margin: 40px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name{
+    font-weight: 600;
+    color: var(--color);
+    margin-bottom: 5px
+}
+
+.skill{
+    font-size: 12px;
+    color: #555;
+    font-weight: 500;
+}
+
+.followInfo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.followers,.following{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.followInfo span:nth-child(1){
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.followInfo span:nth-child(2){
+    color: var(--color);
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(0,0,0,0.1);
+    letter-spacing: .5px;
+}
+
+.buttons{
+    display: flex;
+    margin: 30px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons button{
+    width: 110px;
+    height: 40px;
+    border: 2px solid var(--color);
+    border-radius: 50px;
+    outline: none;
+    color: var(--color);
+    font-weight: 500;
+    letter-spacing: .5px;
+    font-size: 15px;
+    cursor: pointer;
+    background: none;
+    transition: all .4s;
+}
+
+button:first-child{
+    background: var(--color);
+    color: #fff;
+}
+
+button:last-child:hover{
+    background: var(--color);
+    color: #fff;
+}
+
+.colorsBox{
+    height: 60px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.colorsBox span{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgb(116,160,241);
+    cursor: pointer;
+}
+
+.colorsBox span:first-child{
+    background-color: rgb(116,160,241);
+}
+
+.colorsBox span:last-child{
+    background-color: rgb(215,171,39);
+}
+
+.colorsBox span:nth-child(2){
+    background-color: rgb(220,51,45);
+}
+
+.colorsBox span:nth-child(3){
+    background-color: rgb(185,129,168);
+}
+
+.colorsBox span:nth-child(4){
+    background-color: rgb(116,212,98);
+}
