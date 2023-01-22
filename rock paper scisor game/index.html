@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor Game</title>
+</head>
+<body>
+
+    <div class="info">
+        <div class="top">
+            <h4>Some info about this game</h4>
+            <span class="mode"><i class="fa-regular fa-moon"></i></span>
+        </div>
+        <ul>
+            <li>Game is between you & your computer.</li>
+            <li><strong>winning info:</strong>
+                <li>Rock beats Scissor</li>
+                <li>Scissor beats Paper</li>
+                <li>Paper beats Rock</li>
+            </li>
+        </ul>
+        <button class="startBtn">Start Game</button>
+    </div>
+
+    <div class="wrapper">
+        <div class="top">
+            <button class="restart">Restart</button>
+            <header>
+                <span class="computer">Computer: <span>0</span></span>
+                <span class="you">You: <span>0</span></span>
+            </header>
+        </div>
+
+        <div class="icons">
+            <i data-dice="ROCK" class="fa-regular fa-hand-back-fist"></i>
+            <i data-dice="PAPER" class="fa-regular fa-hand"></i>
+            <i data-dice="SCISSOR" class="fa-regular fa-hand-scissors"></i>
+        </div>
+
+        <div class="results">
+            <span class="yourDise">You choosed: <strong>Rock</strong></span>
+            <span class="computerDise">Computer choosed: <strong>Paper</strong></span>
+            <button class="resultBtn">You win</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
