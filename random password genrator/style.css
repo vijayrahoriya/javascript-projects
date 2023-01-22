@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(25, 131, 172);
+    flex-direction: column;
+}
+
+.copy{
+    background: #000;
+    color: #fff;
+    width: 450px;
+    position: absolute;
+    top: 25%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    display: none;
+}
+
+.copy.active{
+    display: block;
+}
+
+.wrapper{
+    background: #000;
+    width: 450px;
+    border-radius: 5px;
+    padding: 50px 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.top{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.top input{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #dcdcdc;
+    width: 70%;
+    color: #fff;
+    padding: 5px;
+    pointer-events: none;
+}
+
+.top i{
+    cursor: pointer;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom input{
+    -webkit-appearance: none;
+    appearance: none;
+    background: #dcdcdc;
+    outline: none;
+    border-radius: 3px;
+    height: 2px;
+    width: 80%;
+}
+
+.bottom input::-webkit-slider-thumb{
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background: rgb(25, 131, 172);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bottom span{
+    background: #fff;
+    color: #000;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
