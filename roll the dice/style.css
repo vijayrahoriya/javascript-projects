@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg,#fff 50%,rgb(205, 68, 68) 50%);
+}
+
+.wrapper{
+    width: 400px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    padding: 50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dice-first,.dice-second{
+    border: 3px solid rgb(205, 68, 68);
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.dice-first.active , .dice-second.active{
+    animation: shake .8s linear;
+}
+
+@keyframes shake{
+    0%{
+        transform: rotate(45deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+header .dice-first div,
+header .dice-second div{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: rgb(205, 68, 68);
+}
+
+
+header .dice-first div.active,
+header .dice-second div.active{
+    display: none;
+}
+
+.roll{
+    text-align: center;
+    width: 100%;
+    margin: 30px 0 10px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+button{
+    background: rgb(205, 68, 68);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color:#fff;
+    font-weight: 500;
+    align-self: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 100%;
+    transition: all .4s;
+}
+
+button:active{
+    transform: scale(.98);
+}
