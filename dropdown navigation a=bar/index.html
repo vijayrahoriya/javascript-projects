@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Dropdown Navigation Bar</title>
+</head>
+<body>
+
+   <div class="container">
+    <nav>
+        <span>Let'sCode</span>
+        <i class="bars fa fa-bars"></i>
+        <ul class="lists">
+            <li>Home</li>
+            <li>HTML & CSS <i class="dropdown fa fa-chevron-down"></i>
+                <ul>
+                    <li>Web Design</li>
+                    <li>Login Forms</li>
+                    <li>Card Design</li>
+                    <li class="more">More <i class="fa fa-chevron-right"></i>
+                        <ul>
+                            <li>Meumorphism</li>
+                            <li>Pre Loader</li>
+                            <li>GlassMorphism</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>JavaScript <i class="dropdown fa fa-chevron-down"></i>
+                <ul>
+                    <li>Dynamic Clock</li>
+                    <li>Form Validation</li>
+                    <li>Card Slider</li>
+                    <li>Complete Website</li>
+                </ul>
+            </li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+        <i class="fa fa-search"></i>
+        <div class="input">
+            <input type="text" placeholder="Search Here">
+        </div>
+    </nav>
+   </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

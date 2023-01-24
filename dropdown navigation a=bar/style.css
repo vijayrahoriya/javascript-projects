@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.container{
+    width: 100%;
+    background: rgb(17, 168, 228);
+    padding: 10px 80px;
+    color: #fff;
+}
+
+.bars{
+    display: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav span{
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+nav .lists{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all .4s ease;
+}
+
+nav ul li:hover  ul{
+    display: block;
+}
+
+nav ul li:hover .dropdown{
+    transform: rotate(180deg);
+}
+
+.fa-chevron-up{
+    transition: all .6s ease;
+}
+
+li ul{
+    background: rgb(17, 168, 228);
+    padding: 20px;
+    list-style: none;
+    display: none;
+    transition: all .4s ease;
+    position: absolute;
+}
+
+li ul li.more ul{
+    display: none;
+    transition: all .4s ease;
+}
+
+li ul li.more:hover ul{
+    display: block;
+    left: 60%;
+    top: 80%;
+}
+
+li ul li{
+    margin-top: 10px;
+}
+
+.container i{
+    cursor: pointer;
+}
+
+.input{
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.input.show{
+    opacity: 1;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 5px solid rgb(17, 168, 228);
+    font-size: 1rem;
+    position: relative;
+}
+
+.input::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    top: -10px;
+    right: 10px;
+    transform: rotate(45deg);
+    height: 20px;
+    background: rgb(17, 168, 228);
+}
+
+

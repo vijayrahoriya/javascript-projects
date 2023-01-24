@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Login And Registration Form</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="login">
+            <header>Login</header>
+            <form onsubmit="submitForm()">
+                <div class="field">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input class="fillInput" type="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input class="fillInput" type="password" placeholder="Enter Your Password" required>
+                    <i class="showPass fa-regular fa-eye-slash"></i>
+                </div>
+                <div class="info">
+                    <div class="input">
+                        <input type="checkbox" id="check">
+                        <label for="check">Remeber me</label>
+                    </div>
+                    <a href="#">Forget Password</a>
+                </div>
+                <button type="submit" class="loginBtn">Login Now</button>
+                <p>Not a memeber?<a class="signupPage" href="#">Signup now</a></p>
+            </form>
+        </div>
+        <div class="signup">
+            <header>Registration</header>
+            <form onsubmit="submitForm()">
+                <div class="field">
+                    <i class="fa-regular fa-user"></i>
+                    <input class="fillInput" type="text" placeholder="Enter Your Name" required>
+                </div>
+                <div class="field">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input class="fillInput" type="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input class="fillInput" type="password" placeholder="Enter Your Password" required>
+                </div>
+                <div class="field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input class="fillInput" type="password" placeholder="Confirm Your Password" required>
+                    <i class="showPass fa-regular fa-eye-slash"></i>
+                </div>
+                <div class="info">
+                    <div class="input">
+                        <input type="checkbox" id="check">
+                        <label for="check">I accept all terms & conditions</label>
+                    </div>
+                </div>
+                <button type="submit" class="loginBtn">Register Now</button>
+                <p>Already have an account?<a class="signupPage" href="#">Login now</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
