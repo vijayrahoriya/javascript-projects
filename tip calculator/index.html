@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <h1>Tip Calculator</h1>
+    <div class="wrapper">
+        <div class="field">
+            <span>Bill</span>
+            <div class="input">
+                <span>$</span>
+                <input type="number" placeholder="0.00" min="0" max="">
+            </div>
+        </div>
+        <div class="field">
+            <span>Tip</span>
+            <span class="data tipamount">$0</span>
+        </div>
+        <hr>
+        
+        <div class="field" style="margin-bottom: 40px;">
+            <span>Total amount</span>
+            <span class="data totalamount">$0</span>
+        </div>
+        <div class="field">
+            <span>Tip %</span>
+            <span class="data tiprange">15%</span>
+        </div>
+        <div class="field">
+            <input class="tip" type="range" value="15" min="0" max="100">
+        </div>
+        <div class="field">
+            <span>No. of people</span>
+            <span class="data peoplerange">1</span>
+        </div>
+        <div class="field">
+            <input class="people" type="range" value="0"  min="0" max="15">
+        </div>
+        <div class="info">
+            <div class="field">
+                <span>Tip Per Person</span>
+                <span class="data tipperperson">$ 0.00</span>
+            </div>
+            <div class="field">
+                <span>Total Per Person</span>
+                <span class="data totalperson">$ 0.00</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

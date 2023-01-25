@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(180deg, rgb(10, 143, 196) 50%, #fff 50%);
+}
+
+h1{
+    position: absolute;
+    top: 50px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-shadow: 5px 5px 8px rgba(0,0,0,.5);
+}
+
+.wrapper{
+    background: #fff;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    padding: 40px 30px;
+}
+
+.field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.field .data{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.input{
+    background: skyblue;
+    padding: 5px;
+    color: blue;
+}
+
+.field input[type='number']{
+    border: none;
+    background: none;
+    width: 100px;
+    color:blue;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+}
+
+.field input[type='number']::placeholder{
+    color: blue
+}
+
+hr{
+    margin-bottom: 10px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+}
+
+input[type='range']{
+    width: 100%;
+    outline: none;
+    height: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.info{
+    background: skyblue;
+    padding: 20px 10px;
+    border-radius: 5px;
+    color: blue;
+    margin-top: 40px;
+}

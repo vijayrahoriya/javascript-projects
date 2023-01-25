@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+button{
+    width: 170px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background: purple;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all .5s;
+}
+
+button.active{
+    display: none;
+}
+
+button:hover{
+    opacity: .9;
+}
+
+.progress{
+    background: rgb(170, 47, 170);
+    width: 400px;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+    transition: all .3s;
+    display: none;
+}
+
+.progress.active{
+    display: block;
+}
+
+.progress-bar{
+    background: purple;
+    border-radius: 5px;
+    height: 100%;
+    width: 0px;
+}
+
