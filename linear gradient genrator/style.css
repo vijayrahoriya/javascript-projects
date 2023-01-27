@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#a2c7eb ,#3cb0d7);
+}
+
+.wrapper{
+    background: #fff;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 60px;
+}
+
+input{
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+}
+
+input::-webkit-color-swatch{
+    border-radius: 20px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.icons button{
+    transition: all .3s;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.icons i{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.icons button.active{
+    background: #187BD8;
+    color: #fff;
+}
+
+.icons button:hover{
+    background: #187BD8;
+    color: #fff;
+}
+
+.icons button:nth-child(5) i{
+    transform: rotate(45deg);
+}
+
+.icons button:nth-child(6) i{
+    transform: rotate(225deg);
+}
+
+.icons button:nth-child(7) i{
+    transform: rotate(-45deg);
+}
+
+.icons button:nth-child(8) i{
+    transform: rotate(135deg);
+}
+
+.buttons{
+    text-align: center;
+}
+
+.genrate{
+    background: #187BD8;
+    border-radius: 40px;
+    width: 200px;
+    border: none;
+    height: 40px;
+    margin: 30px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+    transition: all .3s;
+    opacity: .9;
+}
+
+.genrate:hover{
+    opacity: 1;
+}
+
+.gradient{
+    padding: 10px;
+    background: rgb(176, 212, 226);
+    border-radius: 5px;
+}
+
+.copyButton{
+    text-align: right;
+}
+
+.copyButton button{
+    background: #187BD8;
+    border-radius: 10px;
+    width: 100px;
+    border: none;
+    height: 40px;
+    margin: 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+    transition: all .3s;
+}

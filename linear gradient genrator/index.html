@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Linear Gradient Genrator</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <input type="color" value="#3cb0d7">
+            <input type="color" value="#a2c7eb">
+        </header>
+        <div class="icons">
+            <button class="active" data-angle="0"><i class="fa fa-arrow-up"></i></button>
+            <button data-angle="180"><i class="fa fa-arrow-down"></i></button>
+            <button data-angle="270"><i class="fa fa-arrow-left"></i></button>
+            <button data-angle="90"><i class="fa fa-arrow-right"></i></button>
+            <button data-angle="45"><i class="fa fa-arrow-up"></i></button>
+            <button data-angle="225"><i class="fa fa-arrow-up"></i></button>
+            <button data-angle="315"><i class="fa fa-arrow-up"></i></button>
+            <button data-angle="135"><i class="fa fa-arrow-up"></i></button>
+        </div>
+        <div class="buttons"><button class="genrate">Genrate</button></div>
+        <div class="gradient">
+            <p>background-image: <span>linear-gradient(0deg,#70b0f0 ,#3cb0d7);</span></p><br>
+            <div class="copyButton">
+                <button>Copy</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
