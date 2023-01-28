@@ -10,7 +10,7 @@ window.onload = function(){
     sliderTwo()
 }
 
-let minGap = 0;
+let minGap = 10;
 
 function sliderOne(){
     if(parseInt(slider2.value) - parseInt(slider1.value) <= minGap){
