@@ -781,10 +781,14 @@ footer section
     gap: 30px;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+.footer .right a{
+    color: #fff;
     transition: all .3s;
 }
 
-.footer .right i:hover {
+.footer .right a:hover {
     color: var(--parag)
 }
 

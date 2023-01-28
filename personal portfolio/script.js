@@ -121,3 +121,4 @@ modeEl.addEventListener('click',(e)=>{
         modeEl.classList.replace('fa-sun','fa-moon')
     }
 })
+
