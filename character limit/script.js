@@ -16,5 +16,5 @@ textarea.addEventListener('input',()=>{
     value != "" ?  textLimit.classList.add('active') : textLimit.classList.remove('active')
     let charLength = value.split("").filter((word)=> word != " ").length
     textLimit.innerHTML = `${charLength}/${max}`
-    textarea.maxLength = max
+    charLength > max ? field.style.borderColor = 'red' : field.style.borderColor = 'rgb(21, 127, 169)'
 })
