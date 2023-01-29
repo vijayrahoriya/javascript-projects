@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: rgb(212, 235, 244);
+}
+
+.testimonial{
+    max-width: 900px;
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+    /* background: #fff; */
+    overflow: hidden;
+}
+
+.testimonial .image{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.testimonial .slide p{
+    padding: 0 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+.slide .quote-icon{
+    font-size: 30px;
+    color: #4070f4;
+}
+
+.slide .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.slide .name{
+    font-size: 14px;
+    font-weight: 600;
+    color:#333;
+}
+
+.slide .job{
+    font-size: 12px;
+    font-weight: 400;
+    color:#333;
+}
+
+/* swipper button  */
+
+.nav-btn{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(30px);
+    background: rgba(0,0,0,.1);
+    transition: all .3s;
+}
+
+.nav-btn:hover{
+    background: rgba(0,0,0,.2);
+}
+
+.nav-btn::after,
+.nav-btn::before{
+    font-size: 20px;
+    color: #fff;
+}
+
+.swiper-pagination-bullet{
+    background-color: rgba(0,0,0,.8);
+}
+
+.swiper-pagination-bullet-active{
+    background: #4070f4;
+}
+
+@media(max-width: 768px){
+    .testimonial .slide p{
+        padding: 0 20px;
+    }
+    .nav-btn{
+        display: none;
+    }
+}

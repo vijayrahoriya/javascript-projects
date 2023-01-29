@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: rgb(204, 232, 244);
+}
+
+.wrapper .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+    width: 0px;
+    border-radius: 5px;
+    display: flex;
+    padding: 20px 0;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    transition: all .4s;
+}
+
+.wrapper .buttons.active{
+    width: 65px;
+    overflow:visible ;
+}
+
+.wrapper button{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.wrapper button span{
+    position: absolute;
+    right: -120px;
+    background: #fff;
+    height: 30px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    transition: all .4s;
+}
+
+.wrapper button:hover span{
+    display: grid;
+}
+
+.wrapper button span::before{
+    content: "";
+    position: absolute;
+    width: 15px;height: 15px;
+    background: #fff;
+    left: -13px;
+    top: 43%;
+    transform: rotate(45deg) translateY(-50%);
+}
+
+
+.wrapper button i{
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.icon i{
+    background: blueviolet;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    height: 40px;width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.icon i.active{
+    transform: rotate(45deg);
+    background: red;
+}
