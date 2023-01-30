@@ -56,6 +56,8 @@ filterSlider.forEach(input=>{
 
 flipBtns.forEach(flipBtn=>{
     flipBtn.addEventListener('click',()=>{
+        flipHori = 1;
+        flipVerti = 1;
         if(flipBtn.id== 'flip'){
             choosedImage.style.transform = `scale(1)`
         }
