@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic Image Editor</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="content">
+            <div class="field">
+                <div>Blur</div>
+                <input min="0" max="5" value="0" id="blur" type="range">
+            </div>
+            <div class="field">
+                <div>Contrast</div>
+                <input min="0" max="400" value="0" id="contrast" type="range">
+            </div>
+            <div class="field">
+                <div>Hue-Rotate</div>
+                <input min="0" max="500" value="0" id="hue" type="range">
+            </div>
+            <div class="field">
+                <div>Sepia</div>
+                <input min="0" max="100" value="0" id="sepia" type="range">
+            </div>
+            <div class="input-radio">
+                <input type="radio" id="flip" name="flipBtn" checked>
+                <label for="flip">No Flip</label>
+            </div>
+            <div class="input-radio">
+                <input type="radio" id="hori" name="flipBtn">
+                <label for="hori">Flip Horizontaly</label>
+            </div>
+            <div class="input-radio">
+                <input type="radio" id="verti" name="flipBtn">
+                <label for="verti">Flip Verticaly</label>
+            </div>
+        </div>
+        <div class="image">
+            <img src="user1.avif" alt="">
+            <div class="buttons">
+                <input type="file" accept="image" hidden>
+                <button class="choose">Choose A Image</button>
+                <button class="save">Save Image</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
