@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: lightgray;
+}
+
+.container{
+    max-width: 400px;
+    width: 100%;
+}
+
+.steps{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    z-index: 111;
+}
+
+.circle{
+    height: 50px;
+    width: 50px;
+    border: 4px solid darkgray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: gray;
+    background: lightgray;
+    transition: all .3s;
+    transition-delay: 1ms;
+}
+
+.circle.active{
+    border-color: rgb(86, 182, 219);
+    color: rgb(86, 182, 219);
+}
+
+.progress{
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: darkgray;
+    z-index: -1; 
+}
+
+.indicators{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: rgb(86, 182, 219);
+    transition: all .3s;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button{
+    background: rgb(24, 126, 166);
+    height: 40px;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.active{
+    pointer-events: none;
+    opacity: .8;
+}
