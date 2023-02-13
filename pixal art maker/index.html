@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pixal Art Maker</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="left">
+                <label for="width-range">Grid Width:</label>
+                <div class="input">
+                    <input type="range" min="0" max="35" id="width-range">
+                    <span class="width">00</span>
+                </div>
+            </div>
+            <div class="left">
+                <label for="height-range">Grid Height:</label>
+                <div class="input">
+                    <input type="range" min="0" max="35" id="height-range">
+                    <span class="height">00</span>
+                </div>
+            </div>
+        </header>
+        <div class="buttons">
+            <button id="create">Create Grid</button>
+            <button id="clear">Clear Grid</button>
+            <input type="color" id="grid-color">
+            <button id="erase">Erase Grid</button>
+            <button id="paint">Paint Grid</button>
+        </div>
+        <div class="container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

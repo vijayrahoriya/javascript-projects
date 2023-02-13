@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(180deg, rgb(20, 142, 190) 50%, black 50%);
+}
+
+.wrapper{
+    background: #fff;
+    width: 700px;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+header input{
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 1rem;
+    outline: none;
+    padding-left: 10px;
+}
+
+.text-area input{
+    position: absolute;
+    z-index: -99;
+    opacity: 0;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    appearance: none;
+}
+
+.text{
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 25px;
+    color: #333;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+
+.text span.active{
+    color: rgb(20, 142, 190);
+    position: relative;
+}
+
+.text span::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+}
+
+.text span.active::after{
+    background: rgb(20, 142, 190);
+    animation: popup 1s linear infinite;
+}
+
+@keyframes popup{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+
+.text span.correct{
+    color:green;
+}
+
+.text span.incorrect{
+    color: red;
+}
+
+.btn{
+    text-align: right;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+}
+
+.error{
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    top: -60px;
+    right: 50px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.error.show{
+    opacity: 1;
+}
+
+.error::before{
+    content: "";
+    position: absolute;
+    height: 20px;width: 20px;
+    background: #fff;
+    bottom: -8px;
+    right: 4px;
+    transform: rotate(45deg);
+}
+
+button{
+    background: rgb(20, 142, 190);
+    border: none;
+    width: 100px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: .9;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+button.hide{
+    display: none;
+}
+
+button:hover{
+    opacity: 1;
+}

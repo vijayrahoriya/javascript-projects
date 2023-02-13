@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #dedede;
+}
+
+.wrapper{
+    width: 65vmin;
+    height: 70vmin;
+    background: #293447;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+.game-details{
+    color: #fafafa;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.play-board{
+    width: 100%;
+    height: 100%;
+    background: #293447;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.play-board .food{
+    background: red;
+}
+
+.play-board .head{
+    background: skyblue;
+}
+
+.controls{
+    bottom: 0;
+    height: 40px;
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background: #3e5479;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+.controls i{
+    border-right: 1px solid #293447;
+    height: 100%;
+    line-height: 40px;
+    width: 25%;
+    text-align: center;
+}
+
+@media(max-width: 600px){
+    .controls{
+        display: flex;
+    }
+}

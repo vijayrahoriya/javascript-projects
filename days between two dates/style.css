@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(180deg, rgb(49, 172, 49) 50%,black 50%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 500px;
+    background: #222;
+    padding: 50px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left,.right{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 180px;
+    height: 40px;
+    background: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin: 8px 0;
+    color: #222;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+::-webkit-calendar-picker-indicator{
+    /* background: rgba(49, 172, 49,.6); */
+    color:#222;
+    padding: .2em;
+    cursor: pointer;
+    border-radius: .1em;
+}
+
+.but{
+    text-align: center;
+}
+
+button{
+    background: rgb(49, 172, 49);
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 10px 0 30px 0;
+    cursor: pointer;
+}
+
+.result{
+    background: #333;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.result span{
+    color:rgb(49, 172, 49);
+    font-weight: 600;
+    margin: 0 5px;;
+    font-size: 1.5rem;
+}
+
+@media(max-width: 500px){
+    header{
+        display: block;
+    }
+    input{
+        width: 100%;
+    }
+
+    button{
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(18, 117, 156);
+}
+
+.wrapper{
+    background: #fff;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    padding: 30px 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.wrapper p{
+    margin-bottom: 10px;
+}
+
+.wrapper span{
+    font-weight: 400;
+    color: #444;
+}
