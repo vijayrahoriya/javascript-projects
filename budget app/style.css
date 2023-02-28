@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background: rgb(226, 238, 242);
+}
+
+.container{
+    width: 60vw;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header .left,
+header .right{
+    width: 45%;
+    background: #fff;
+    padding: 20px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+input{
+    height: 35px;
+    background: none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: .8rem;
+    outline: none;
+}
+
+button{
+    background: rgb(36, 153, 192);
+    height: 35px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: .9rem;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button:hover{
+    letter-spacing: 1px;
+}
+
+input:focus{
+    border-color: rgb(16, 110, 142);
+}
+
+.info{
+    background: rgb(36, 153, 192);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 30px 0;
+    text-align: center;
+}
+
+.info h3{
+    font-size: .9rem;
+    margin-bottom: 5px;
+}
+
+.list{
+    background: #fff;
+    padding: 20px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+li{
+    list-style-type: none;
+    margin-top: 8px;
+    padding: 8px;
+    border-left: 3.5px solid rgb(36, 153, 192);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li i{
+    cursor: pointer;
+    color: #444;
+}
+
+li i:hover{
+    color: #111;
+}
+
+.icons{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width: 600px){
+    .container{
+        width: 100%;
+    }
+    header{
+        flex-direction: column;
+    }
+    header .left,header .right{
+        margin-top: 20px;
+        width: 100%;
+    }
+}

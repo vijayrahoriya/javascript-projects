@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(black 50%,orange 50%);
+}
+
+.wrapper{
+    background: #222;
+    width: 450px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(199, 191, 191, 0.4);
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+input{
+    flex: 1;
+    height: 35px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    background: #111;
+    font-size: 1rem;
+    padding-left: 10px;
+    color: #fff;
+}
+
+button{
+    padding: 8px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    margin-left: 10px;
+    cursor: pointer;
+    background: orange;
+}
+
+.content{
+    color: #fff;
+    padding: 0 20px;
+    height: 0px;
+    transition: all .3s;
+}
+
+.content.active{
+    height: auto;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info img{
+    height: 150px;
+    width: 130px;
+    border: 5px;
+    margin-bottom: 30px;
+}
+
+.rate{
+    text-align: center;
+}
+
+h5{
+    font-size: 1.2rem;
+}
+
+.rate p,.but{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    align-items: center;
+    gap: 6px;
+    color: #fff;
+}
+
+.content h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rate i{
+    color: orange;
+}
+
+.spans{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: #888;
+    font-size: .9rem;
+}
+
+.but span{
+    font-size: .8rem;
+}
+
+label{
+    font-size: 1.1rem;
+}
+
+p{
+    color: #999;
+    margin: 5px 0 20px 0;
+    font-size: .9rem;
+    line-height: 25px;
+}
+

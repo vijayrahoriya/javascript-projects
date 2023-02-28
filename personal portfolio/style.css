@@ -768,11 +768,7 @@ footer section
     font-weight: 500;
 }
 
-.footer .mid span {
-    cursor: pointer;
-}
-
-.footer .mid span:hover {
+.footer .mid a:hover {
     color: var(--parag);
 }
 
@@ -850,7 +846,7 @@ media query
     }
 
     .home {
-        height: 40vh;
+        /* height: 40vh; */
     }
 
     .home .content {
@@ -874,7 +870,12 @@ media query
 
     .home .content .img {
         display: block;
-        border-radius: 63% 37% 14% 86% / 48% 43% 57% 52%
+        border-radius: 63% 37% 14% 86% / 48% 43% 57% 52%;
+    }
+
+    .home .content .img img{
+        border-radius: 5px;
+        width: 100%;
     }
 
     .home .content .info {
@@ -894,7 +895,7 @@ media query
         position: sticky;
         width: 100%;
         bottom: 0;
-        top: 95vh;
+        top: 92.8vh;
         z-index: 111;
     }
 
@@ -984,5 +985,17 @@ media query
 
     .qualification .work {
         width: 100%;
+    }
+}
+
+@media(max-width: 400px){
+    .services .row{
+        display: block;
+    }
+    .services .box{
+        width: 100%;
+    }
+    .navbar{
+        top: 94vh;
     }
 }

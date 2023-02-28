@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: orange;
+}
+
+.container{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body{
+    background: #fff;
+    height: 150px;
+    width: 150px;
+    border: 2px solid;
+    border-radius: 50% 50% 40% 40%;
+    position: relative;
+}
+
+.ears{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: -15px;
+}
+
+.ears .left,
+.ears .right{
+    background: rgb(90, 24, 90);
+    width: 50px;
+    height: 60px;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.ears .left,
+.eyes .left{
+    transform: rotate(-30deg);
+}
+
+.ears .right,
+.eyes .right{
+    transform: rotate(30deg);
+}
+
+.eyes .left{
+    transform: rotate(-25deg);
+}
+
+.eyes .right{
+    transform: rotate(25deg);
+}
+
+.eyes{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: -15px;
+    top: 20%;
+    padding: 0 25px;
+}
+
+.eyes .left,
+.eyes .right{
+    background: rgb(90, 24, 90);
+    width: 35px;
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.eyes .left::before,
+.eyes .right::before{
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 13px;background: #fff;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,.3);
+    transition: all .3s;
+}
+
+.eyes .left.active::before,
+.eyes .right.active::before{
+    top: 20px;
+}
+
+.eyes .left::after,
+.eyes .right::after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 15px;background: rgb(231, 128, 145);
+    bottom: -10px;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.eyes .left::after{
+    bottom: -5px;
+    left: -10px;
+    transform: rotate(40deg);
+}
+
+.eyes .right::after{
+    bottom: -5px;
+    right: -10px;
+    transform: rotate(-40deg);
+}
+
+.mouth{
+    position: absolute;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgb(90, 24, 90);
+    left: 50%;
+    transform: translateX(-50%) rotate(225deg);
+    border-radius: 50% 50% 50px;
+}
+
+.mouth::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(90, 24, 90);
+    padding: 5px;
+    border-radius: 50px;
+    transform: rotate(70deg);
+    top: -19px;
+    right: 0px;
+    border-top: none;
+    border-right: none;
+}
+
+.mouth::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(90, 24, 90);
+    padding: 5px;
+    border-radius: 50px;
+    right:11px;
+    transform: rotate(-70deg);
+    top: -2px;
+    border-bottom: none;
+    border-left: none;
+}
+
+.form-area{
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.hands,.foots{
+    position: absolute;
+    top: -15px;
+    display: flex;
+    justify-content: space-around;
+    left: 0;
+    width: inherit;
+    transition: all .3s;
+}
+
+.hands.active{
+    padding: 0 90px;
+    top: -130px;
+}
+
+.hands.active .left,
+.hands.active .right{
+    height: 150px;
+    border-radius: 50px 50px  8px 8px;
+    transform: rotate(30deg);
+}
+
+.hands.active .right{
+    transform: rotate(-30deg);
+}
+
+.hands .left,
+.hands .right{
+    background: rgb(90, 24, 90);
+    width: 40px;
+    height: 40px;
+    border-radius: 8px 8px 50% 50%;
+    transition: all .3s;
+}
+
+.foots{
+    top: 90%;
+    padding: 0 50px;
+}
+
+.finger{
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.finger:nth-child(1){
+    margin-top: 13px;
+}
+
+.finger:nth-child(3){
+    margin-top: 13px;
+}
+
+.foots .left,
+.foots .right{
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    height: 50px;
+    background: rgb(90, 24, 90);
+    border-radius: 50% 50% 8px 8px;
+    position: relative;
+}
+
+.foots .left::before,
+.foots .right::before{
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 25px;
+    height: 23px;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+    border-radius: 50% 50% 2px 2px;
+}
+
+p{
+    font-weight: 600;
+}
+
+input{
+    height: 40px;
+    font-size: 1rem;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+button{
+    background: orange;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 15px;
+}

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.container .left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:#fff;
+    flex: .5;
+    gap: 40px;
+}
+
+.left .field{
+    height: 33%;
+}
+
+textarea{
+    height: 100%;
+    width: 100%;
+    background: #222;
+    border: none;
+    resize: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    outline: none;
+    margin-top: 5px;
+}
+
+.container .right{
+    flex: .5;
+    padding: 10px;
+    background: #fff;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;border: none;
+}

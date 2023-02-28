@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background: #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 80vw;
+}
+
+.container.hide{
+    display: none;
+}
+
+.button{
+    position: sticky;
+    top: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+button{
+    padding: 9px 10px;
+    border: none;
+    background: rgb(10, 145, 198);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all .3s;
+    opacity: .8;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row .box{
+    background: #fff;
+    margin: 20px 0 0 20px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 30%;
+}
+
+h4{
+    color :#444;
+    font-size: .9rem;
+}
+
+.box button{
+    margin: 10px 0;
+    width: 100%;
+}
+
+.answer{
+    margin-bottom: 10px;
+    display: none;
+}
+
+.answer.show{
+    display: block;
+}
+
+.icons{
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+.icons i:first-child{
+    color:rgb(10, 145, 198);
+}
+
+.icons i:last-child{
+    color: tomato;
+}
+
+.modal{
+    display: none;
+}
+
+.modal.show{
+    display: block;
+}
+
+.modal .box{
+    background: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.modal i{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.modal i:hover{
+    color: #000;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+label{
+    font-weight: 600;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 8px;
+    font-size: .9rem;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+}
+
+textarea:focus{
+    border-color: rgb(10, 145, 198);
+}
