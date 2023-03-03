@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Google Clone</title>
+</head>
+<body>
+
+    <header>
+        <div class="tab">
+            <div class="left">
+                <i class="fa-brands fa-chrome"></i>
+            <span>New Tab</span>
+            </div>
+            <i class="fa fa-close"></i>
+        </div>
+        <i class="fa fa-add add-tab"></i>
+    </header>
+
+    <div class="options">
+        <i class="fa fa-arrow-left" id="nextprev"></i>
+        <i class="fa fa-arrow-right" id="nextprev"></i>
+        <i class="fa fa-rotate-right" id="refresh"></i>
+        <div class="field">
+            <input type="text" placeholder="Search Google or type a URL">
+            <div class="left">
+                <i class="fa-brands fa-google"></i>
+            </div>
+            <div class="right">
+                <i class="fa fa-share"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="box"></div>
+        <img class="userimage" src="hanuman ji.jpg" alt="">
+        <i class="fa-solid fa-ellipsis-vertical vertical"></i>
+        <div class="options-box">
+            <ul>
+                <li>
+                    <span>New Tab</span>
+                    <span>Ctrl + T</span>
+                </li>
+                <li>
+                    <span>New Window</span>
+                    <span>Ctrl + N</span>
+                </li>
+                <li>
+                    <span>New Icognito mode</span>
+                    <span>Ctrl + Shift + N</span>
+                </li>
+                <li>
+                    <span>History</span>
+                    <span class="fa fa-caret-right"></span>
+                </li>
+                <li>
+                    <span>Downloads</span>
+                    <span>Ctrl + J</span>
+                </li>
+                <li>
+                    <span>Bookmarks</span>
+                    <span class="fa fa-caret-right"></span>
+                </li>
+                <li class="zoom">
+                    <span>Zoom</span>
+                    <span>
+                        <p class="icon">-</p>
+                        <p>100%</p>
+                        <p class="icon">+</p>
+                    </span>
+                    <span class="fa-solid fa-expand"></span>
+                </li>
+                <li>
+                    <span>Print</span>
+                    <span>Ctrl + P</span>
+                </li>
+                <li>
+                    <span>Cast</span>
+                </li>
+                <li>
+                    <span>Find</span>
+                    <span>Ctrl + F</span>
+                </li>
+                <li>
+                    <span>More Tools</span>
+                    <span class="fa fa-caret-right"></span>
+                </li>
+                <li class="edit">
+                    <span>Edit</span>
+                    <span>Cut</span>
+                    <span>Copy</span>
+                    <span>Paste</span>
+                </li>
+                <li>
+                    <span>Setting</span>
+                </li>
+                <li>
+                    <span>Help</span>
+                    <span class="fa fa-caret-right"></span>
+                </li>
+                <li>
+                    <span>Exit</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="big-box">
+        <div class="main">
+            <div class="top">
+                <span>Gmail</span>
+                <span>Images</span>
+                <i class="fa-solid fa-braille"></i>
+                <img class="userimage" src="hanuman ji.jpg" alt="">
+            </div>
+        
+            <div class="search-box">
+                <h1>
+                    <span style="color: rgb(41, 159, 198)">G</span>
+                    <span style="color: red">o</span>
+                    <span style="color: yellow">o</span>
+                    <span style="color: rgb(41, 159, 198)">g</span>
+                    <span style="color: green">l</span>
+                    <span style="color: red; transform: rotate(-15deg);">e</span>
+                </h1>
+                <div class="field">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search Google or type a URL">
+                    <i style="cursor: pointer; color: red;" class="fa-solid fa-microphone" id="mic"></i>
+                </div>
+                <div class="row">
+                    <div class="box">
+                        <i class="fa fa-ellipsis-vertical more"></i>
+                        <i style="color: red" class="fa-brands fa-youtube"></i>
+                        <span>YouTube</span>
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-ellipsis-vertical more"></i>
+                        <i style="color: gray" class="fa fa-code"></i>
+                        <span>Font</span>
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-ellipsis-vertical more"></i>
+                        <i style="color: blue" class="fa fa-flag"></i>
+                        <span>Font Awesome</span>
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-ellipsis-vertical more"></i>
+                        <i style="color: #222"  class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-add"></i>
+                        <span>Add shortcut</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="customize">
+            <i class="fa-solid fa-pen"></i>
+            <span>Customize Chrome</span>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-box">
+            <h5>Customize this page</h5>
+            <div class="modify">
+                <div class="left">
+                    <div class="line active"  id="bg">
+                        <i class="fa-regular fa-image"></i>
+                        <span>Background</span>
+                    </div>
+                    <div class="line"  id="short">
+                        <i class="fa-solid fa-paperclip"></i>
+                        <span>Shortcut</span>
+                    </div>
+                    <div class="line" id="colortheme">
+                        <i class="fa-solid fa-palette"></i>
+                        <span>Color and theme</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="row">
+                        <div class="box">
+                            <input type="file" id="fileinput" style="display: none;">
+                            <i class="fa fa-check"></i>
+                            <div class="image upload">
+                                
+                            </div>
+                        </div>
+                        <div class="box active">
+                            <i class="fa fa-check"></i>
+                            <div class="image classic">
+                                none
+                            </div>
+                            <span>Classic chrome</span>
+                        </div>
+                        <div class="box">
+                            <i class="fa fa-check"></i>
+                            <div class="image">
+                                <img src="bg1.jpg" alt="">
+                            </div>
+                            <span>Textures</span>
+                        </div>
+                        <div class="box">
+                            <i class="fa fa-check"></i>
+                            <div class="image">
+                                <img src="bg2.jpg" alt="">
+                            </div>
+                            <span>Auto</span>
+                        </div>
+                        <div class="box">
+                            <i class="fa fa-check"></i>
+                            <div class="image">
+                                <img src="bg3.avif" alt="">
+                            </div>
+                            <span>Tour</span>
+                        </div>
+                        <div class="box">
+                            <i class="fa fa-check"></i>
+                            <div class="image">
+                                <img src="bg4.jpg" alt="">
+                            </div>
+                            <span>Fields</span>
+                        </div>
+                        <div class="box">
+                            <i class="fa fa-check"></i>
+                            <div class="image">
+                                <img src="bg5.jpg" alt="">
+                            </div>
+                            <span>Night</span>
+                        </div>
+                        <div class="box">
+                            <i class="fa fa-check"></i>
+                            <div class="image">
+                                <img src="bg6.jpg" alt="">
+                            </div>
+                            <span>Nature</span>
+                        </div>
+                        
+                    </div>
+                    <div class="row2">
+                        <div class="left1">
+                            <div class="box1 active">
+                                <div class="box">
+                                    <i class="fa fa-check"></i>
+                                    <h5>Google</h5>
+                                    <div class="hori"></div>
+                                    <div class="dots">
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>My shortcuts</h5>
+                            <p>Shortcuts are curated by you</p>
+                        </div>
+                        <div class="right1">
+                            <div class="box1">
+                                <div class="box">
+                                    <i class="fa fa-check"></i>
+                                    <h5>Google</h5>
+                                    <div class="hori"></div>
+                                    <div class="dots">
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>Most visited sites</h5>
+                            <p>Shortcuts are suggested based on websites you visit often</p>
+                        </div>
+                    </div>
+                    <div class="hide">
+                        <div class="left1">
+                            <div class="icon">
+                                <i class="fa fa-eye-slash"></i>
+                            </div>
+                            <div class="content">
+                                <h5>Hide Shortcut</h5>
+                                <p>Don't show shortcuts on this page</p>
+                            </div>
+                        </div>
+                        <div class="right1">
+                            <div class="toggle"></div>
+                        </div>
+                    </div>
+                    <div class="colors-row">
+                        <div class="color-box active first" id="1">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box second" id="2">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box third" id="3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box fourth" id="4">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box five" id="5">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box six" id="6">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box sevan" id="7">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box eight" id="8">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box nine" id="9">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box ten" id="10">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box elevan" id="11">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box twelve" id="12">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box thirteen" id="13">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box forteen" id="14">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box fifteen" id="15">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box sixteen" id="16">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box sevanteen" id="17">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box eighteen" id="18">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box nineteen" id="19">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="color-box twenty" id="20">
+                            <i class="fa fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="cancel">Cancel</button>
+                <button class="done active">Done</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

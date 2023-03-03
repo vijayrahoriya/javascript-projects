@@ -289,7 +289,7 @@ nav {
 .home img {
     width: 80%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     border-radius:39% 61% 93% 7% / 48% 47% 53% 52%;
 }
 
