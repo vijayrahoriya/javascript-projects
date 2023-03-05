@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(4, 106, 139);
+}
+
+.container{
+    width: 500px;
+}
+
+header{
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    gap: 10px;
+}
+
+header input{
+    flex: 9;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid gray;
+    padding-left: 10px;
+    outline: none;
+    font-size: 1rem;
+}
+
+header input:focus{
+    border-color: rgb(4, 106, 139);
+}
+
+header button{
+    flex: 3;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(4, 106, 139);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+ul{
+    background: #fff;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 20px;
+    list-style-type: none;
+    display: none;
+}
+
+ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 5px;
+    margin: 10px;
+}
+
+li button{
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    font-size: .8rem;
+    color: #fff;
+}
+
+li button.edit{
+    background: rgb(4, 106, 139);
+    margin-right: 10px;
+}
+
+li button.delete{
+    background: rgb(230, 41, 7);
+}

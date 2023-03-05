@@ -14,7 +14,7 @@ const questionGenrator = () =>{
     resultEl.classList.add('hide')
     gameArea.classList.remove('hide');
     resultEl.classList.add('hide')
-    const [num1,num2] = [randomValue(1,20),randomValue(1,20)];
+    let [num1,num2] = [randomValue(1,20),randomValue(1,20)];
 
     let randomOperator = operators[Math.floor(Math.random() * operators.length)]
 
