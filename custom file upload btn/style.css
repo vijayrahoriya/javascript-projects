@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    background: rgb(18, 108, 143);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 60vw;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input{
+    display: none;
+}
+
+label{
+    background: rgb(18, 108, 143);
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.msg{
+    font-size: .95rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.msg.active{
+    display: none;
+}
+
+.fileList{
+    width: 100%;
+}
+
+.file{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(223, 239, 245);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
